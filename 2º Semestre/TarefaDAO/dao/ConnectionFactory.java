@@ -1,5 +1,4 @@
-
-package tarefadao.dao;
+package TarefaDAO.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
