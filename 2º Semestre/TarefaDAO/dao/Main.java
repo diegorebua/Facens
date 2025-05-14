@@ -1,7 +1,7 @@
-package tarefadao.dao;
+package TarefaDAO.dao;
 
-import tarefadao.dao.ProdutoDAO;
-import tarefadao.entity.Produto;
+import TarefaDAO.dao.ProdutoDAO;
+import TarefaDAO.entity.Produto;
 
 import java.util.List;
 import java.util.Scanner;
