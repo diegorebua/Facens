@@ -1,10 +1,10 @@
-package tarefadao.dao;
+package TarefaDAO.dao;
 
-import aula14.entity.Usuario;
+import TarefaDAO.entity.Usuario;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class UsuarioDAO {
@@ -12,8 +12,8 @@ public class UsuarioDAO {
     public void inserir(Usuario usuario) {
         String sql = "insert into usuario(login,senha) values (?,?)";
 
-        try (Connection conn = ConnectionFactory.getConnection(); 
-             PreparedStatement stmt = conn.prepareStatement(sql)) {
+        try (Connection conn = ConnectionFactory.getConnection();
+            PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             stmt.setString(1, usuario.getLogin());
             stmt.setString(2, usuario.getSenha());
@@ -27,7 +27,7 @@ public class UsuarioDAO {
     public void editar(Usuario usuario) {
         String sql = "update usuario set login = ?, senha = ? where id = ?";
 
-        try (Connection conn = ConnectionFactory.getConnection(); 
+        try (Connection conn = ConnectionFactory.getConnection();
                 PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             stmt.setString(1, usuario.getLogin());
@@ -42,7 +42,7 @@ public class UsuarioDAO {
     public void excluir(int codigo) {
         String sql = "delete from usuario where id_usuario = ?";
 
-        try (Connection conn = ConnectionFactory.getConnection(); 
+        try (Connection conn = ConnectionFactory.getConnection();
                 PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             stmt.setInt(1, codigo);
@@ -57,8 +57,8 @@ public class UsuarioDAO {
         String sql = "SELECT * FROM usuario";
         ArrayList<Usuario> usuarios = new ArrayList<>();
 
-        try (Connection conn = ConnectionFactory.getConnection(); 
-                PreparedStatement stmt = conn.prepareStatement(sql); 
+        try (Connection conn = ConnectionFactory.getConnection();
+                PreparedStatement stmt = conn.prepareStatement(sql);
                 ResultSet rs = stmt.executeQuery()) {
 
             while (rs.next()) {
@@ -81,7 +81,7 @@ public class UsuarioDAO {
         Usuario usuario = null;
         String sql = "select * from Usuario where id_usuario = ?";
 
-        try (Connection conn = ConnectionFactory.getConnection(); 
+        try (Connection conn = ConnectionFactory.getConnection();
                 PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             stmt.setInt(1, id_usuario); // Definir o valor do par�metro
@@ -98,24 +98,23 @@ public class UsuarioDAO {
 
         return usuario;
     }
-    
+
     public boolean autenticar(String login, String senha) {
         Usuario usuario = null;
         String sql = "select * from Usuario where login = ? and senha = ?";
-        
+
         try (Connection conn = ConnectionFactory.getConnection();
                 PreparedStatement stmt = conn.prepareStatement(sql);){
-            
+
             stmt.setString(1, login);
             stmt.setString(2, senha);
-            
+
             try (ResultSet rs = stmt.executeQuery()) {
                 return rs.next();
             }
         } catch (SQLException ex) {
             System.out.println("Erro ao autenticar usu�rio: " + ex.getMessage());
         }
-        
         return false;
     }
 }

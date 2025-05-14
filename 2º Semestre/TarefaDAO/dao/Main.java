@@ -1,8 +1,6 @@
 package TarefaDAO.dao;
 
-import TarefaDAO.dao.ProdutoDAO;
 import TarefaDAO.entity.Produto;
-
 import java.util.List;
 import java.util.Scanner;
 

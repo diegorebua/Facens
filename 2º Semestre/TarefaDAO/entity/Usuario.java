@@ -1,5 +1,5 @@
 
-package aula14.entity;
+package TarefaDAO.entity;
 
 public class Usuario {
     private int id_usuario;
@@ -12,7 +12,6 @@ public class Usuario {
         this.senha = senha;
     }
 
-    
     public String getLogin() {
         return login;
     }
@@ -36,6 +35,4 @@ public class Usuario {
     public void setId_usuario(int id_usuario) {
         this.id_usuario = id_usuario;
     }
-    
-    
 }
