@@ -9,7 +9,7 @@ public class ProdutoDAO {
     public void inserir(Produto produto) {
         String sql = "INSERT INTO produto (nome, quantidade, valorUnitario) VALUES (?, ?, ?)";
         try (Connection conn = ConnectionFactory.getConnection();
-             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, produto.getNome());
             stmt.setInt(2, produto.getQuantidade());
             stmt.setDouble(3, produto.getValorUnitario());
@@ -22,7 +22,7 @@ public class ProdutoDAO {
     public void apagar(int id) {
         String sql = "DELETE FROM produto WHERE id = ?";
         try (Connection conn = ConnectionFactory.getConnection();
-             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setInt(1, id);
             stmt.executeUpdate();
         } catch (SQLException e) {
@@ -33,7 +33,7 @@ public class ProdutoDAO {
     public void editar(Produto produto) {
         String sql = "UPDATE produto SET nome = ?, quantidade = ?, valorUnitario = ? WHERE id = ?";
         try (Connection conn = ConnectionFactory.getConnection();
-             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, produto.getNome());
             stmt.setInt(2, produto.getQuantidade());
             stmt.setDouble(3, produto.getValorUnitario());
@@ -48,8 +48,8 @@ public class ProdutoDAO {
         List<Produto> lista = new ArrayList<>();
         String sql = "SELECT * FROM produto";
         try (Connection conn = ConnectionFactory.getConnection();
-             Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery(sql)) {
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql)) {
             while (rs.next()) {
                 Produto p = new Produto();
                 p.setId(rs.getInt("id"));

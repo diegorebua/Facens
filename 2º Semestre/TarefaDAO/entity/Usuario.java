@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 08e1a4e2fe16a462d871a5490a73915a4161be15
 package TarefaDAO.entity;
 
 public class Usuario {
@@ -11,7 +15,6 @@ public class Usuario {
         this.senha = senha;
     }
 
-    
     public String getLogin() {
         return login;
     }
@@ -35,6 +38,4 @@ public class Usuario {
     public void setId_usuario(int id_usuario) {
         this.id_usuario = id_usuario;
     }
-    
-    
 }

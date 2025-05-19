@@ -6,9 +6,9 @@ import java.lang.reflect.Field;
 import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.sql.ResultSet;
 
 /*
     1- A Classe DAO precisa come�ar com o nome da Tabela
