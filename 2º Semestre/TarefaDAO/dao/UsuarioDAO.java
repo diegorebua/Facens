@@ -1,6 +1,6 @@
-package tarefadao.dao;
+package TarefaDAO.dao;
 
-import aula14.entity.Usuario;
+import TarefaDAO.entity.Usuario;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

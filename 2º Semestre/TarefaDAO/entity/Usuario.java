@@ -1,5 +1,4 @@
-
-package aula14.entity;
+package TarefaDAO.entity;
 
 public class Usuario {
     private int id_usuario;

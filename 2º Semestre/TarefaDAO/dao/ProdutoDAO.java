@@ -1,6 +1,6 @@
-package tarefadao.dao;
+package TarefaDAO.dao;
 
-import tarefadao.entity.Produto;
+import TarefaDAO.entity.Produto;
 import java.sql.*;
 import java.util.*;
 

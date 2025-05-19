@@ -1,6 +1,6 @@
-package tarefadao.dao;
+package TarefaDAO.dao;
 
-import aula14.utils.IgnoreInDAO;
+import TarefaDAO.utils.IgnoreInDAO;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.math.BigDecimal;

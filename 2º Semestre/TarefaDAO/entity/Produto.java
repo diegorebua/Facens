@@ -1,4 +1,4 @@
-package tarefadao.entity;
+package TarefaDAO.entity;
 
 public class Produto {
     private int id;
