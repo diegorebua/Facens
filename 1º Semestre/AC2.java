@@ -11,14 +11,6 @@ public class AC2 {
         double[] peso = new double[4];
         double[] nota = new double[4];
 
-        System.out.println("AC2 Construcao de algoritimos");
-        System.out.println("Integrantes:");
-        System.out.println("Gabriel Antunes Barros; RA 240519.");
-        System.out.println("Henrique Bertola Bonifacio; RA 240144");
-        System.out.println("Philipe Georges Zorub Batzli; RA 240376\n");
-        System.out.println("Pressione qualquer valor e enter para continuar");
-        scn.next();
-
         System.out.println("CALCULO DE NOTAS\n");
         System.out.println("Calculo de notas das avaliacoes:");
         System.out.println("Avaliacao Continuada 1 (AC1)");
