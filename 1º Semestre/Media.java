@@ -21,5 +21,7 @@ public class Media {
         media = (numero + media)/3;
 
         System.out.println("O resultado é: "+media);
+    
+        scn.close();
     }
 }

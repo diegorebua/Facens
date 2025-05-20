@@ -30,6 +30,6 @@ public class Operadores {
         else{
             System.out.println("Operador invalido");
         }
-
+        scn.close();
     }    
 }

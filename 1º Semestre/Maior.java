@@ -18,5 +18,6 @@ public class Maior{
         else{
             System.out.println("O numero:"+segundoNumero+" é o maior numero");
         }
+        scn.close();
     }
 }

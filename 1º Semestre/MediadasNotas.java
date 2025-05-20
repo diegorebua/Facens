@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main{
+public class MediadasNotas{
 
     public static void main(String[] args){
         Scanner scn = new Scanner(System.in);
@@ -19,10 +19,10 @@ public class Main{
         System.out.println("Insira a nota minima para ser aprovado:");
         notaMinima = scn.nextDouble();
 
-        calculoNotaAC1 = notaAC1*0.15;
-        calculoNotaAC2 = notaAC2*0.30;
-        calculoNotaAG = notaAG*0.10;
-        calculoNotaAF = notaAF*0.45;
+        calculoNotaAC1 = notaAC1 * 0.15;
+        calculoNotaAC2 = notaAC2 * 0.30;
+        calculoNotaAG = notaAG * 0.10;
+        calculoNotaAF = notaAF * 0.45;
 
         calculoFinal = calculoNotaAC1 + calculoNotaAC2 + calculoNotaAG + calculoNotaAF;
 
@@ -34,5 +34,6 @@ public class Main{
         else{
             System.out.println("Valor invalido");
         }
+        scn.close();
     }
 }
