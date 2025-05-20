@@ -1,6 +1,8 @@
+// Já foi visto
+
 import java.util.Scanner;
 
-public class AulaFor{
+public class NumerosDivisiveis7{
 
     public static void main(String[] args){
         Scanner scn = new Scanner(System.in);
