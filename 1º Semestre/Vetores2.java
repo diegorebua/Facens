@@ -14,6 +14,7 @@ public class Vetores2 {
         }
 
         System.out.println(vetorChar);
+        
 
         int[] vetor = {1, 2, 3};
         System.out.println(vetor);
