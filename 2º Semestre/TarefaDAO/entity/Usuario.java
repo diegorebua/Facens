@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 08e1a4e2fe16a462d871a5490a73915a4161be15
 package TarefaDAO.entity;
 
 public class Usuario {
