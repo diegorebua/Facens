@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Frase {
+public class CaractereseVogais {
 
     public static void main(String[] args){
     Scanner scn = new Scanner(System.in);
