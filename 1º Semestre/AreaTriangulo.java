@@ -1,3 +1,5 @@
+//Já foi visto
+
 import java.util.Scanner;
 
 public class AreaTriangulo{

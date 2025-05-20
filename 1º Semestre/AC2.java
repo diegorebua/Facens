@@ -11,9 +11,9 @@ public class AC2 {
         double[] peso = new double[4];
         double[] nota = new double[4];
 
-        System.out.println("CALCULO DE NOTAS\n");
-        System.out.println("Calculo de notas das avaliacoes:");
-        System.out.println("Avaliacao Continuada 1 (AC1)");
+        System.out.println("\nCalculo de Notas\n");
+        System.out.println("Calculo de notas das avaliações:");
+        System.out.println("\nAvaliacao Continuada 1 (AC1)");
         System.out.println("Avaliacao Continuada 2 (AC2)");
         System.out.println("Avaliacao Geral (AG)");
         System.out.println("Avaliacao Final (AF)\n");
@@ -181,7 +181,6 @@ public class AC2 {
             }
 
         } while (escolhaMenu != 3);
-
         scn.close();
     }
 }
