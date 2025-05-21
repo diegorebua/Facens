@@ -6,7 +6,7 @@ public class CalculoPar{
 
     public static void main(String[] args){
         Scanner scn = new Scanner(System.in);
-        int numero, soma;
+        int numero;
 
         System.out.println("\nInsira o numero desejado: ");
         numero = scn.nextInt();

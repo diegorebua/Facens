@@ -1,6 +1,8 @@
+// Ja foi visto
+
 import java.util.Scanner;
 
-public class CalculoWhile{
+public class Calculadora{
 
     public static void main(String[] args){
         Scanner scn = new Scanner(System.in);
@@ -8,46 +10,46 @@ public class CalculoWhile{
         char op = ' ', escolhaSaida = ' ';
 
         do{
-            System.out.println("Insira dois numeros:");
-            System.out.println("Primeiro: ");
+            System.out.println("\nInsira dois números: ");
+            System.out.println("\nPrimeiro número: ");
             primeiro = scn.nextDouble();
 
-            System.out.println("Segundo: ");
+            System.out.println("Segundo número: ");
             segundo = scn.nextDouble();
 
-            System.out.println("Selecione uma operacao: ");
-            System.out.println("+ : soma");
-            System.out.println("- : subtracao");
-            System.out.println("/ : divisao");
-            System.out.println("* : multiplicacao");
+            System.out.println("\nSelecione uma operação: ");
+            System.out.println("1: Soma");
+            System.out.println("2: Subtração");
+            System.out.println("3: Divisão");
+            System.out.println("4: Multiplicação");
             op = scn.next().charAt(0);
 
             switch (op){
-                case '+':
+                case '1':
                     resultado = primeiro + segundo;
                     break;
-                case '-':
+                case '2':
                     resultado = primeiro - segundo;
                     break;
-                case '/':
+                case '3':
                     resultado = primeiro/segundo;
                     break;
-                case '*':
+                case '4':
                     resultado = primeiro*segundo;
                     break;
                 default:
-                    System.out.println("Opereacao invalida");
+                    System.out.println("Opereação invalida");
                     break;           
             }
 
-            System.out.println("O resultado é: "+resultado);
+            System.out.println("O resultado é: " + resultado);
 
             System.out.println(" ");
 
-            System.out.println("Deseja continuar? s - sim, qualquer para sair");
+            System.out.println("Deseja continuar? (S) - sim, qualquer para sair");
             escolhaSaida = scn.next().charAt(0);
 
-        } while(escolhaSaida == 's');
+        } while(escolhaSaida == 'S');
 
         scn.close();
     }
