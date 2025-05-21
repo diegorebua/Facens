@@ -1,3 +1,5 @@
+// Já foi visto
+
 import java.util.Scanner;
 
 public class CalculoPar{
@@ -9,10 +11,9 @@ public class CalculoPar{
         System.out.println("\nInsira o numero desejado: ");
         numero = scn.nextInt();
 
-        for(int cont = 1;cont <= numero;cont += 2){
-          
-        soma = cont+cont;
-        System.out.println(+soma);
+        System.out.println("\nNúmeros pares de 2 até " + numero + ":");
+        for(int cont = 2;cont <= numero;cont += 2){
+        System.out.println(cont);
     
         }
         scn.close();

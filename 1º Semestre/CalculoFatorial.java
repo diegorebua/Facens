@@ -1,3 +1,5 @@
+// Já foi visto
+
 import java.util.Scanner;
 
 public class CalculoFatorial{
@@ -6,10 +8,10 @@ public class CalculoFatorial{
         Scanner scn = new Scanner(System.in);
         int numero;
 
-        System.out.println("Insira o numero desejado: ");
+        System.out.println("\nInsira o numero desejado: ");
         numero = scn.nextInt();
 
-        System.out.println("\n Fatoriais do número 1 até " + numero + ":");
+        System.out.println("\nFatoriais do número 1 até " + numero + ":");
         
         for(int i = 1; i <= numero; i++){
           int fatorial = 1;
