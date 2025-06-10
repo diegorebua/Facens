@@ -1,3 +1,5 @@
+// Já foi visto
+
 import java.util.Scanner;
 
 public class CaractereseVogais {
@@ -17,7 +19,7 @@ public class CaractereseVogais {
                 }
             }
         
-            System.out.println("Quantidade de caracteres: " + qtd);
+            System.out.println("\nQuantidade de caracteres: " + qtd);
             System.out.println("Quantidade de vogais: " + vogal);
         
         scn.close();
