@@ -1,31 +1,32 @@
-package tarefaAnimal;
+package TarefaAnimal;
 
-public class Gato extends Animal{
-    private int alturaSalto;
+public class Gato extends Animal {
+    private int AlturaSalto;
 
     public Gato() {
     }
 
-    public Gato(String nome, int idade, int alturaSalto) {
+    public Gato(String nome, int idade, int AlturaSalto) {
         super(nome, idade);
-        this.alturaSalto = alturaSalto;
+        this.AlturaSalto = AlturaSalto;
     }
 
     public int getAlturaSalto() {
-        return alturaSalto;
+        return AlturaSalto;
     }
 
     public void setAlturaSalto(int alturaSalto) {
-        this.alturaSalto = alturaSalto;
-    }
-
-    public String falar(){
-        return "O gato "+super.getNome()+" faz Miau";
+        AlturaSalto = alturaSalto;
     }
 
     @Override
-    public String imprimir(){
-        String msg = super.imprimir()+"\nA altura que o gato pula e: "+alturaSalto;
-        return msg;
+    public String imprimir() {
+        return super.imprimir() + ", Altura do Salto: " + AlturaSalto;
     }
+
+    @Override
+    public String falar() {
+        return "Miauuuu";
+    }
+
 }

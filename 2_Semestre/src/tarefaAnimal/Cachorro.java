@@ -1,6 +1,6 @@
-package tarefaAnimal;
+package TarefaAnimal;
 
-public class Cachorro extends Animal{
+public class Cachorro extends Animal {
     private int velocidade;
 
     public Cachorro() {
@@ -19,13 +19,13 @@ public class Cachorro extends Animal{
         this.velocidade = velocidade;
     }
 
-    public String falar(){
-        return "O cachorro "+super.getNome()+" faz Auau";
+    @Override
+    public String imprimir() {
+        return super.imprimir() + ", Velocidade: " + velocidade;
     }
 
     @Override
-    public String imprimir(){
-        String msg = super.imprimir()+"\nA velocidade do cachorro e: "+velocidade;
-        return msg;
+    public String falar() {
+        return "Au Auuuu";
     }
 }

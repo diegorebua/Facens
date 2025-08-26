@@ -1,4 +1,5 @@
-package tarefaAnimal;
+
+package TarefaAnimal;
 
 public class Capivara extends Animal {
     private int peso;
@@ -19,13 +20,14 @@ public class Capivara extends Animal {
         this.peso = peso;
     }
 
-    public String falar(){
-        return "A capivara "+super.getNome()+" faz Tralalero Tralala";
+    @Override
+    public String imprimir() {
+        return super.imprimir() + ", peso: " + peso;
     }
 
     @Override
-    public String imprimir(){
-        String msg = super.imprimir()+"\nO peso da capivara e: "+peso;
-        return msg;
+    public String falar() {
+        return "ownnnnnnnnn";
     }
+
 }

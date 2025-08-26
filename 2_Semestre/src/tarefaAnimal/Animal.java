@@ -1,9 +1,9 @@
-package tarefaAnimal;
+package TarefaAnimal;
 
 public class Animal {
     private String nome;
     private int idade;
-    
+
     public Animal() {
     }
 
@@ -28,12 +28,11 @@ public class Animal {
         this.idade = idade;
     }
 
-    public String imprimir(){
-        String msg = "Os dados do animal sao:"+"\nNome: "+nome+"\nCom a idade: "+idade;
-        return msg;
+    public String imprimir() {
+        return "Nome: " + nome + ", Idade: " + idade;
     }
 
-    public String falar(){
-        return "";
+    public String falar() {
+        return "Som genérico do animal.";
     }
 }
