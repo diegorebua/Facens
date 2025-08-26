@@ -1,3 +1,4 @@
+package Aula_1;
 // atividade de numeros aleatorios de estrutura de dados
 
 import java.util.Scanner;
