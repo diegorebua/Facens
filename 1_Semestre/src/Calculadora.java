@@ -1,3 +1,4 @@
+package src;
 // Ja foi visto
 
 import java.util.Scanner;
