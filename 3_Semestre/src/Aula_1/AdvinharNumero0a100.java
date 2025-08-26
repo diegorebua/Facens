@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Random;
 import javax.swing.JOptionPane;
 
-public class aleatorio {
+public class AdvinharNumero0a100 {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         Random gerador = new Random();
