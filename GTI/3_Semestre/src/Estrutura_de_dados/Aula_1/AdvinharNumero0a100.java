@@ -32,5 +32,4 @@ public class AdvinharNumero0a100 {
         } while (palpite != numAleatorio);
         scn.close();
     }
-
 }
