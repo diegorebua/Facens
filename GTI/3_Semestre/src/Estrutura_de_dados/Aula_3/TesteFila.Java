@@ -1,6 +1,6 @@
-package Aula_3;
+package Estrutura_de_dados.Aula_3;
 
-public class TesteFila.java;
+public class TesteFila;
 
     //Classe para tester a fila
     public static void main(String{} args){
@@ -8,9 +8,9 @@ public class TesteFila.java;
         Fila minhaFila = new Fila();
 
         if(minhaFila.tamanho()==10)
-            System.out.println("Tamanho igual a 10! Ok")
+            System.out.println("Tamanho igual a 10! Ok");
         else
-            System.out.println("Erro!!! Temanho diferente")
+            System.out.println("Erro!!! Temanho diferente");
 
         //Se não for implementado a rotina de proteção o código vai quebrar nesse ponto
         minhaFila.remover();
